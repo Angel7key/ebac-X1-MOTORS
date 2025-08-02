@@ -1,0 +1,87 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  background-color: rgb(39, 41, 44);
+  width: 100%;
+}
+
+header {
+  padding: 20px;
+}
+header section {
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+header section h1 {
+  color: palevioletred;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgb(10, 10, 10);
+}
+header section nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-right: 50px;
+}
+header section nav a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(255, 0, 174);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+main section.nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.nosotros article {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+main section.nosotros article h2 {
+  padding-left: 150px;
+  font-size: 20px;
+  color: pink;
+}
+main section.nosotros article p {
+  padding-left: 50px;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 2;
+}
+main section.diseños {
+  display: flex;
+  justify-content: center;
+}
+main section.diseños div {
+  display: block;
+}
+main section.diseños div h2 {
+  font-size: 20px;
+  color: pink;
+  padding-left: 300px;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+main section.diseños div article {
+  display: inline-block;
+}
+main section.diseños div article.tarjetas {
+  padding-right: 100px;
+}
+main section.diseños div article.tarjetas img.two {
+  height: 285px;
+  width: 285px;
+}/*# sourceMappingURL=mainNosotros.css.map */

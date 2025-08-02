@@ -1,0 +1,39 @@
+$fontFamily:"poppins", Arial, Helvetica, sans-serif;
+$backgroundColor:rgb(39 41 44);
+
+@mixin titleNameDesign{
+    color: palevioletred;
+    font-size: 30px;
+     font-weight: 700;
+     text-shadow: 1px 1px 2px rgb(10, 10, 10);
+
+}
+
+@mixin menuDesign{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(255, 0, 174);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@mixin backgroundBanner{
+    background-image: url(../img/background2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 50%;
+}
+
+@mixin titleBanner{
+ color:rgb(216, 154, 112);
+    font-size: 30px;
+     margin-bottom: 50px;
+     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+@mixin descriptionBanner{
+ margin-top: 60px;
+     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    color:rgb(216, 154, 112);
+    font-size: 25px;
+}

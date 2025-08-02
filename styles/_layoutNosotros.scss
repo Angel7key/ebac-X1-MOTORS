@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+
+
+body {
+   font-family: $fontFamily;
+    
+    
+    background-color: $backgroundColor;
+    
+    width: 100%;  
+}
+
+header{
+    padding: 20px;
+    section{
+        display: flex;
+        margin: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+            @include titleNameDesign;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-right: 50px;
+            a{
+                 @include menuDesign;
+            }
+        }
+    }
+
+}
+
+
+main{
+    section{
+       
+
+        &.nosotros{
+
+             display: flex;
+        justify-content: center;
+        align-items: center;
+
+          article{
+            padding-top: 100px;
+            display: flex;
+            
+            flex-direction: column;
+            
+            h2{
+               @include title;
+            }
+
+            p{
+             @include description;
+            }
+        }
+        }
+        
+
+
+        &.diseños{
+             
+            display: flex;
+            justify-content: center;
+                
+
+                div{
+
+                    display: block;
+                    h2{
+                       @include titleDiseños;
+                    }
+
+
+
+                    article{
+                        
+                       display: inline-block;
+                        
+
+                        &.tarjetas{
+                            padding-right: 100px;
+
+                            img{
+                               &.two{
+                                    height: 285px;
+                                    width: 285px;
+                                 }
+                            }
+
+                            
+                        }
+                    }
+                }
+
+           
+        
+           
+        }
+
+
+    }
+}
+
+
+

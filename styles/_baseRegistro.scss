@@ -1,0 +1,24 @@
+$fontFamily:"poppins", Arial, Helvetica, sans-serif;
+$backgroundColor:rgb(39 41 44);
+
+@mixin titleNameDesign{
+    color: palevioletred;
+    font-size: 30px;
+     font-weight: 700;
+     text-shadow: 1px 1px 2px rgb(10, 10, 10);
+
+}
+
+@mixin menuDesign{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(255, 0, 174);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@mixin title{
+    color: rgb(160, 0, 120);
+     font-size: 30px;
+     padding-left: 50px;
+}

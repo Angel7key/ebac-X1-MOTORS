@@ -1,0 +1,221 @@
+ html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+
+
+body {
+
+     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main "
+    "footer";
+
+
+    font-family: $fontFamily;
+    
+    
+    background-color: $backgroundColor;
+
+        padding: 20px;
+        background-image: $backgroundImage;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 30%;
+        
+    
+    width: 100%;  
+
+
+    @include tablets{
+              background-size: calc(150% + 50vh) calc(150% + 50vh);
+              background-position-x:30%;
+              padding: 0;
+              
+              
+    }
+}
+
+header{
+
+    grid-area: header;
+
+   
+
+
+    padding: 20px;
+    section{
+        display: flex;
+        margin: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+
+           display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "headerOne headerTwo";
+
+            @include tablets{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "headerOne "
+                "headerTwo";
+            }
+
+        h1{
+            grid-area: headerOne;
+
+             @include tablets{
+               display: flex;
+               justify-content: center
+            }
+            @include titleNameDesign;
+        }
+        nav{
+            grid-area: headerTwo;
+            
+           
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-right: 50px;
+            a{
+                @include menuDesign;
+            }
+        }
+    }
+
+}
+
+main{
+
+    grid-area: main;
+    section{
+
+        &.inicio{
+         
+       
+        width: 100%;
+         display: flex;
+         
+         justify-content: space-between;
+
+            
+
+ 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "banner catalogo";
+           
+         @include tablets{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "banner "
+                "catalogo";
+            }
+            
+            
+        article{
+               
+            
+            
+             @include tablets{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                }
+            
+              
+              
+
+            &.banner{
+                grid-area: banner;
+                    
+                margin-top: 50px;
+                    
+                 
+                   
+                    
+                h2{
+                   @include bannerTitleDesign;
+                }
+
+                p{
+                     @include bannerTextDesign;
+                }
+            }
+
+
+            &.catalogo{
+                    
+                    grid-area: catalogo;
+                    
+                    div{
+                        &.carousel{
+                            @include catalogoCarrusel;
+                        }
+                    }
+
+                    p{
+                       @include titleCatalogoDesign;
+                    }
+            }
+
+                
+
+                
+            }
+
+
+        }
+
+
+
+       
+        
+        
+    }
+}
+
+
+
+
+
+footer{
+
+    grid-area: footer;
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 150px;
+
+         @include tablets{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-right: 0;
+                    
+                  }
+        article{
+            
+           @include backgroundPromotionText;
+            h3{
+               @include promotionText;
+                
+            }
+        }
+    }
+}
+
+
